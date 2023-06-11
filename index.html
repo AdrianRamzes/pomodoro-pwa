@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HTML Elements Reference</title>
-    <link rel="stylesheet" href="pomodoro.css" />
-    <script src="index.js"></script>
-  </head>
-  <body>
-    TIMER
-  </body>
-</html>
+<head>
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="pomodoro.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script src="index.js"></script>
+</head>
+<div class="grid">
+  <div class="container">
+    <div id="timer" class="timer">25:00</div>
+    <div class="control-panel">
+      <button onclick="onReset()">RESET</button>
+      <button onclick="onStart()">START</button>
+      <button onclick="onPause()">PAUSE</button>
+    </div>
+  </div>
+</div>

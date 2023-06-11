@@ -1,0 +1,8 @@
+{
+  "name": "Pomodoro",
+  "display": "standalone",
+  "start_url": "./",
+  "scope": ".",
+  "background_color": "#c24242",
+  "description": "A PWA pomodoro app."
+}

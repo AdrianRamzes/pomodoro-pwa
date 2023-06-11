@@ -1,0 +1,23 @@
+body {
+  color: white;
+  background-color: #c24242;
+}
+
+.timer {
+  font-size: 30vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
