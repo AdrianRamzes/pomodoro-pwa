@@ -27,7 +27,6 @@ function onStart() {
     if (timeLeft <= 0) {
       onPause();
       timeLeft = 0;
-      return;
     }
     updateView();
   }, 250);
