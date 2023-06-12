@@ -8,9 +8,15 @@
   <div class="container">
     <div id="timer" class="timer">25:00</div>
     <div class="control-panel">
-      <button onclick="onReset()">RESET</button>
-      <button onclick="onStart()">START</button>
-      <button onclick="onPause()">PAUSE</button>
+      <button id="resetButton" onclick="onReset()">
+        <img src="icons/reset.png" alt="RESET" />
+      </button>
+      <button id="startButton" onclick="onStart()">
+        <img src="icons/start.png" alt="START" />
+      </button>
+      <button id="pauseButton" onclick="onPause()" style="display: none">
+        <img src="icons/pause.png" alt="PAUSE" />
+      </button>
     </div>
   </div>
 </div>

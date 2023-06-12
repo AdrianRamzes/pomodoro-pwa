@@ -21,6 +21,8 @@ function getPomodoroEndDateTime() {
 
 function onStart() {
   onPause();
+  showPauseButton();
+  hideStartButton();
   let endDateTime = getPomodoroEndDateTime();
   everySecondInterval = setInterval(() => {
     timeLeft = endDateTime.getTime() - Date.now();
@@ -31,8 +33,11 @@ function onStart() {
     updateView();
   }, 250);
 }
+
 function onPause() {
   clearInterval(everySecondInterval);
+  hidePauseButton();
+  showStartButton();
 }
 
 function resetView() {
@@ -51,4 +56,20 @@ function updateView() {
   let timerString = minutesStr + ":" + secondsStr;
 
   document.getElementById("timer").innerText = timerString;
+}
+
+function hideStartButton() {
+  document.getElementById("startButton").style.display = "none";
+}
+
+function showStartButton() {
+  document.getElementById("startButton").style.display = "";
+}
+
+function hidePauseButton() {
+  document.getElementById("pauseButton").style.display = "none";
+}
+
+function showPauseButton() {
+  document.getElementById("pauseButton").style.display = "";
 }

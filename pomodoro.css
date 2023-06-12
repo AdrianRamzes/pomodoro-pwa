@@ -21,3 +21,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+img {
+  width: 45px;
+}
+
+button {
+  border: 0;
+  border-radius: 25%;
+  padding: 25px;
+  margin: 5px;
+  background: white;
+  border: solid 4px #c24242;
+}
+button:hover {
+  border: solid 4px white;
+}
+button:active {
+  border: solid 4px #c24242;
+}
