@@ -5,7 +5,7 @@ body {
 
 .timer {
   font-size: 30vw;
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
   font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 img {
-  width: 4vw;
+  width: 8vw;
   /* TODO: Replace png with SVG and remove this */
   -webkit-filter: invert(1);
   filter: invert(1);
@@ -32,7 +32,7 @@ img {
 button {
   border: 0;
   border-radius: 25%;
-  padding: 3vw;
+  padding: 6vw;
   margin: 1vw;
   background: rgba(255, 255, 255, 0.25);
   border: solid 4px #c24242;
