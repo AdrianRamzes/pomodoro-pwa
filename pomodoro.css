@@ -23,20 +23,26 @@ body {
 }
 
 img {
-  width: 45px;
+  width: 4vw;
+  /* TODO: Replace png with SVG and remove this */
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 button {
   border: 0;
   border-radius: 25%;
-  padding: 25px;
-  margin: 5px;
-  background: white;
+  padding: 3vw;
+  margin: 1vw;
+  background: rgba(255, 255, 255, 0.25);
   border: solid 4px #c24242;
 }
-button:hover {
-  border: solid 4px white;
+@media (hover: hover) {
+  button:hover {
+    border: solid 4px white;
+  }
 }
 button:active {
   border: solid 4px #c24242;
+  background: rgba(255, 255, 255, 0.1);
 }
