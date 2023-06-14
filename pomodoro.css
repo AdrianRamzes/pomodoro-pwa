@@ -23,7 +23,7 @@ body {
 }
 
 img {
-  width: 8vw;
+  width: 8vmin;
   /* TODO: Replace png with SVG and remove this */
   -webkit-filter: invert(1);
   filter: invert(1);
@@ -32,8 +32,8 @@ img {
 button {
   border: 0;
   border-radius: 25%;
-  padding: 6vw;
-  margin: 1vw;
+  padding: 6vmin;
+  margin: 1vmin;
   background: rgba(255, 255, 255, 0.25);
   border: solid 4px #c24242;
 }
